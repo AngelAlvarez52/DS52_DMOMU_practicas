@@ -10,12 +10,45 @@ class SecondPage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('SecondPage'),
       ),
-      body: Center(
-        child: FloatingActionButton(
-          child: const Text('To Home'),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Row(
+              children: [
+                Text('Alvarez Felix Angel Daniel',
+                    style: TextStyle(fontSize: 20)),
+              ],
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Row(
+              children: [
+                Text(
+                  '6624459952',
+                  style: TextStyle(fontSize: 20),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Row(
+              children: [
+                Text('a22311093@uthermosillo.edu.mx',
+                    style: TextStyle(fontSize: 20)),
+              ],
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Row(
+              children: [
+                Text('Acerca de:', style: TextStyle(fontSize: 20)),
+              ],
+            ),
+          ],
         ),
       ),
     );

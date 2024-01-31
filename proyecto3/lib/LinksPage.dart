@@ -11,11 +11,59 @@ class LinksPage extends StatelessWidget {
         title: const Text('LinksPage'),
       ),
       body: Center(
-        child: FloatingActionButton(
-          child: const Text('To Home'),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Row(
+              children: [
+                Image.asset(
+                  'assets/images/fblogo.png',
+                  width: 50,
+                  height: 50,
+                ),
+                const Text('Facebook', style: TextStyle(fontSize: 20)),
+              ],
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            Row(
+              children: [
+                Image.asset(
+                  'assets/images/logotwitter.png',
+                  width: 50,
+                  height: 50,
+                ),
+                const Text('Twitter', style: TextStyle(fontSize: 20)),
+              ],
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            Row(
+              children: [
+                Image.asset(
+                  'assets/images/logodiscord.png',
+                  width: 50,
+                  height: 50,
+                ),
+                const Text('Discord', style: TextStyle(fontSize: 20)),
+              ],
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            Row(
+              children: [
+                Image.asset(
+                  'assets/images/steamlogo.png',
+                  width: 50,
+                  height: 50,
+                ),
+                const Text('Steam', style: TextStyle(fontSize: 20)),
+              ],
+            ),
+          ],
         ),
       ),
     );

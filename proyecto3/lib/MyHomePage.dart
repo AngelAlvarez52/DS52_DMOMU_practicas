@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'assets/logo.png',
+              'assets/images/logo.png',
               width: 300,
               height: 300,
             ),
